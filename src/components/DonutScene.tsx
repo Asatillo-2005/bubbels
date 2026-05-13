@@ -13,7 +13,7 @@ interface DonutSceneProps {
 export default function DonutScene({ flavor }: DonutSceneProps) {
   return (
     <Canvas
-      camera={{ position: [0, 0, 7], fov: 45 }}
+      camera={{ position: [0, 0, 6], fov: 45 }}
       style={{ width: "100%", height: "100%" }}
     >
       <ambientLight intensity={0.5} />
