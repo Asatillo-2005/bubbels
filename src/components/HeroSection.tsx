@@ -14,7 +14,7 @@ export default function HeroSection({ flavor }: HeroSectionProps) {
     <section className="relative min-h-screen flex items-center">
       {/* 3D Donut */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[320px] h-[320px] md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px] pointer-events-auto">
+        <div className="w-[420px] h-[420px] md:w-[500px] md:h-[500px] lg:w-[580px] lg:h-[580px] pointer-events-auto">
           <DonutScene flavor={flavor} />
         </div>
       </div>
