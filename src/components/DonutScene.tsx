@@ -52,7 +52,7 @@ function Donut({ flavor }: { flavor: DonutFlavor }) {
   const baseColor = useMemo(() => new THREE.Color(flavor.baseColor), [flavor.baseColor]);
 
   return (
-    <group ref={groupRef} scale={1.8}>
+    <group ref={groupRef} scale={1.3}>
       {/* Donut base (torus) */}
       <mesh castShadow receiveShadow>
         <torusGeometry args={[1, 0.45, 32, 64]} />
