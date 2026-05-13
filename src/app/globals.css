@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #5BA3E0;
+  --bg-secondary: #4A90D9;
+  --accent: #ffffff;
+}
+
+[data-theme="blueberry"] {
+  --bg-primary: #5BA3E0;
+  --bg-secondary: #4A90D9;
+  --accent: #ffffff;
+}
+
+[data-theme="lemon"] {
+  --bg-primary: #E8C840;
+  --bg-secondary: #D4B030;
+  --accent: #4A3600;
+}
+
+[data-theme="matcha"] {
+  --bg-primary: #3D8B40;
+  --bg-secondary: #2E7D32;
+  --accent: #ffffff;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  transition: background-color 0.6s ease;
+}
+
+.theme-transition {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
